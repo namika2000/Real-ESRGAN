@@ -132,7 +132,7 @@ def main():
 
     for idx, path in enumerate(paths):
         imgname, extension = os.path.splitext(os.path.basename(path))
-        print('Testing', idx, imgname)
+        print('Testing', idx, imgname, '----', path)
 
         img = cv2.imread(path, cv2.IMREAD_UNCHANGED)
         img_mode = 'RGBA'
