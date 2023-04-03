@@ -135,11 +135,12 @@ def main():
         print('Testing', idx, imgname)
 
         img = cv2.imread(path, cv2.IMREAD_UNCHANGED)
-        print(f"---------------{img}")
-        if len(img.shape) == 3 and img.shape[2] == 4:
-            img_mode = 'RGBA'
-        else:
-            img_mode = None
+        print(f"---------------{img.shape}")
+        img_mode = 'RGBA'
+        # if len(img.shape) == 3 and img.shape[2] == 4:
+           # img_mode = 'RGBA'
+        #else:
+           # img_mode = None
 
         try:
             if args.face_enhance:
