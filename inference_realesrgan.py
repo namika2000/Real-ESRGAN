@@ -140,7 +140,7 @@ def main():
 
         # PIL.Imageで画像を開く
         img = Image.open(path)
-        print('Testing', img, img.shape)
+        print('Testing', img)
         img_mode = 'RGBA'
         # if len(img.shape) == 3 and img.shape[2] == 4:
            # img_mode = 'RGBA'
