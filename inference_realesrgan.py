@@ -134,12 +134,9 @@ def main():
         imgname, extension = os.path.splitext(os.path.basename(path))
         print('Testing', idx, imgname, '----', path)
 
-        #img = cv2.imread(path, cv2.IMREAD_UNCHANGED)
+        img = cv2.imread(path, cv2.IMREAD_UNCHANGED)
         
-        from PIL import Image
-
-        # PIL.Imageで画像を開く
-        img = Image.open(path)
+       
         print('Testing', img)
         img_mode = 'RGBA'
         # if len(img.shape) == 3 and img.shape[2] == 4:
